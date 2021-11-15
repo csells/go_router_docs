@@ -544,7 +544,6 @@ video {
 
 
       [type='text'],
-      [type='email'],
       [type='password'],
       [type='number'],
       [type='search'],
@@ -567,7 +566,7 @@ video {
   line-height: 1.5rem;
 }
 
-[type='text']:focus, [type='email']:focus, [type='password']:focus, [type='number']:focus, [type='search']:focus, [type='time']:focus, textarea:focus, select:focus {
+[type='text']:focus, [type='password']:focus, [type='number']:focus, [type='search']:focus, [type='time']:focus, textarea:focus, select:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
   --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
@@ -1105,229 +1104,6 @@ nav ul li a.active {
   text-decoration: none;
 }
 
-.prose-sm {
-  font-size: 0.875rem;
-  line-height: 1.7142857;
-}
-
-.prose-sm p {
-  margin-top: 1.1428571em;
-  margin-bottom: 1.1428571em;
-}
-
-.prose-sm [class~="lead"] {
-  font-size: 1.2857143em;
-  line-height: 1.5555556;
-  margin-top: 0.8888889em;
-  margin-bottom: 0.8888889em;
-}
-
-.prose-sm blockquote {
-  margin-top: 1.3333333em;
-  margin-bottom: 1.3333333em;
-  padding-left: 1.1111111em;
-}
-
-.prose-sm h1 {
-  font-size: 2.1428571em;
-  margin-top: 0;
-  margin-bottom: 0.8em;
-  line-height: 1.2;
-}
-
-.prose-sm h2 {
-  font-size: 1.4285714em;
-  margin-top: 1.6em;
-  margin-bottom: 0.8em;
-  line-height: 1.4;
-}
-
-.prose-sm h3 {
-  font-size: 1.2857143em;
-  margin-top: 1.5555556em;
-  margin-bottom: 0.4444444em;
-  line-height: 1.5555556;
-}
-
-.prose-sm h4 {
-  margin-top: 1.4285714em;
-  margin-bottom: 0.5714286em;
-  line-height: 1.4285714;
-}
-
-.prose-sm img {
-  margin-top: 1.7142857em;
-  margin-bottom: 1.7142857em;
-}
-
-.prose-sm video {
-  margin-top: 1.7142857em;
-  margin-bottom: 1.7142857em;
-}
-
-.prose-sm figure {
-  margin-top: 1.7142857em;
-  margin-bottom: 1.7142857em;
-}
-
-.prose-sm figure > * {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.prose-sm figure figcaption {
-  font-size: 0.8571429em;
-  line-height: 1.3333333;
-  margin-top: 0.6666667em;
-}
-
-.prose-sm code {
-  font-size: 0.8571429em;
-}
-
-.prose-sm h2 code {
-  font-size: 0.9em;
-}
-
-.prose-sm h3 code {
-  font-size: 0.8888889em;
-}
-
-.prose-sm pre {
-  font-size: 0.8571429em;
-  line-height: 1.6666667;
-  margin-top: 1.6666667em;
-  margin-bottom: 1.6666667em;
-  border-radius: 0.25rem;
-  padding-top: 0.6666667em;
-  padding-right: 1em;
-  padding-bottom: 0.6666667em;
-  padding-left: 1em;
-}
-
-.prose-sm ol {
-  margin-top: 1.1428571em;
-  margin-bottom: 1.1428571em;
-}
-
-.prose-sm ul {
-  margin-top: 1.1428571em;
-  margin-bottom: 1.1428571em;
-}
-
-.prose-sm li {
-  margin-top: 0.2857143em;
-  margin-bottom: 0.2857143em;
-}
-
-.prose-sm ol > li {
-  padding-left: 1.5714286em;
-}
-
-.prose-sm ol > li::before {
-  left: 0;
-}
-
-.prose-sm ul > li {
-  padding-left: 1.5714286em;
-}
-
-.prose-sm ul > li::before {
-  height: 0.3571429em;
-  width: 0.3571429em;
-  top: calc(0.8571429em - 0.1785714em);
-  left: 0.2142857em;
-}
-
-.prose-sm > ul > li p {
-  margin-top: 0.5714286em;
-  margin-bottom: 0.5714286em;
-}
-
-.prose-sm > ul > li > *:first-child {
-  margin-top: 1.1428571em;
-}
-
-.prose-sm > ul > li > *:last-child {
-  margin-bottom: 1.1428571em;
-}
-
-.prose-sm > ol > li > *:first-child {
-  margin-top: 1.1428571em;
-}
-
-.prose-sm > ol > li > *:last-child {
-  margin-bottom: 1.1428571em;
-}
-
-.prose-sm ul ul, .prose-sm ul ol, .prose-sm ol ul, .prose-sm ol ol {
-  margin-top: 0.5714286em;
-  margin-bottom: 0.5714286em;
-}
-
-.prose-sm hr {
-  margin-top: 2.8571429em;
-  margin-bottom: 2.8571429em;
-}
-
-.prose-sm hr + * {
-  margin-top: 0;
-}
-
-.prose-sm h2 + * {
-  margin-top: 0;
-}
-
-.prose-sm h3 + * {
-  margin-top: 0;
-}
-
-.prose-sm h4 + * {
-  margin-top: 0;
-}
-
-.prose-sm table {
-  font-size: 0.8571429em;
-  line-height: 1.5;
-}
-
-.prose-sm thead th {
-  padding-right: 1em;
-  padding-bottom: 0.6666667em;
-  padding-left: 1em;
-}
-
-.prose-sm thead th:first-child {
-  padding-left: 0;
-}
-
-.prose-sm thead th:last-child {
-  padding-right: 0;
-}
-
-.prose-sm tbody td {
-  padding-top: 0.6666667em;
-  padding-right: 1em;
-  padding-bottom: 0.6666667em;
-  padding-left: 1em;
-}
-
-.prose-sm tbody td:first-child {
-  padding-left: 0;
-}
-
-.prose-sm tbody td:last-child {
-  padding-right: 0;
-}
-
-.prose-sm > :first-child {
-  margin-top: 0;
-}
-
-.prose-sm > :last-child {
-  margin-bottom: 0;
-}
-
 .visible {
   visibility: visible !important;
 }
@@ -1390,11 +1166,6 @@ nav ul li a.active {
   margin: 0px !important;
 }
 
-.mx-auto {
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
 .mt-1 {
   margin-top: 0.25rem !important;
 }
@@ -1435,16 +1206,8 @@ nav ul li a.active {
   margin-right: -1rem !important;
 }
 
-.mb-2 {
-  margin-bottom: 0.5rem !important;
-}
-
 .mb-4 {
   margin-bottom: 1rem !important;
-}
-
-.mb-6 {
-  margin-bottom: 1.5rem !important;
 }
 
 .mb-8 {
@@ -1739,16 +1502,6 @@ nav ul li a.active {
   background-color: rgba(243, 244, 246, var(--tw-bg-opacity)) !important;
 }
 
-.bg-green-600 {
-  --tw-bg-opacity: 1 !important;
-  background-color: rgba(5, 150, 105, var(--tw-bg-opacity)) !important;
-}
-
-.hover\:bg-blue-600:hover {
-  --tw-bg-opacity: 1 !important;
-  background-color: rgba(37, 99, 235, var(--tw-bg-opacity)) !important;
-}
-
 .dark .dark\:bg-gray-200 {
   --tw-bg-opacity: 1 !important;
   background-color: rgba(229, 231, 235, var(--tw-bg-opacity)) !important;
@@ -1757,11 +1510,6 @@ nav ul li a.active {
 .dark .dark\:bg-gray-500 {
   --tw-bg-opacity: 1 !important;
   background-color: rgba(107, 114, 128, var(--tw-bg-opacity)) !important;
-}
-
-.dark .dark\:bg-gray-700 {
-  --tw-bg-opacity: 1 !important;
-  background-color: rgba(55, 65, 81, var(--tw-bg-opacity)) !important;
 }
 
 .dark .dark\:bg-gray-800 {
@@ -1790,10 +1538,6 @@ nav ul li a.active {
   padding: 1.5rem !important;
 }
 
-.p-8 {
-  padding: 2rem !important;
-}
-
 .px-0 {
   padding-left: 0px !important;
   padding-right: 0px !important;
@@ -1802,11 +1546,6 @@ nav ul li a.active {
 .px-2 {
   padding-left: 0.5rem !important;
   padding-right: 0.5rem !important;
-}
-
-.px-3 {
-  padding-left: 0.75rem !important;
-  padding-right: 0.75rem !important;
 }
 
 .px-6 {
@@ -1843,10 +1582,6 @@ nav ul li a.active {
   padding-right: 0px !important;
 }
 
-.pr-4 {
-  padding-right: 1rem !important;
-}
-
 .pb-1 {
   padding-bottom: 0.25rem !important;
 }
@@ -1859,10 +1594,6 @@ nav ul li a.active {
   padding-left: 0.75rem !important;
 }
 
-.pl-4 {
-  padding-left: 1rem !important;
-}
-
 .text-xs {
   font-size: 0.75rem !important;
   line-height: 1rem !important;
@@ -1871,11 +1602,6 @@ nav ul li a.active {
 .text-sm {
   font-size: 0.875rem !important;
   line-height: 1.25rem !important;
-}
-
-.text-lg {
-  font-size: 1.125rem !important;
-  line-height: 1.75rem !important;
 }
 
 .text-xl {
@@ -1895,25 +1621,12 @@ nav ul li a.active {
   font-weight: 700 !important;
 }
 
-.uppercase {
-  text-transform: uppercase !important;
-}
-
 .leading-tight {
   line-height: 1.25 !important;
 }
 
-.tracking-wide {
-  letter-spacing: 0.025em !important;
-}
-
 .text-current {
   color: currentColor !important;
-}
-
-.text-white {
-  --tw-text-opacity: 1 !important;
-  color: rgba(255, 255, 255, var(--tw-text-opacity)) !important;
 }
 
 .text-gray-100 {
@@ -1996,11 +1709,6 @@ nav ul li a.active {
 
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
-}
-
-.shadow-lg {
-  --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
 }
 
@@ -2396,25 +2104,8 @@ nav ul li a.active {
     right: 0px !important;
   }
 
-  .md\:mx-auto {
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-
-  .md\:mr-2 {
-    margin-right: 0.5rem !important;
-  }
-
-  .md\:ml-2 {
-    margin-left: 0.5rem !important;
-  }
-
   .md\:block {
     display: block !important;
-  }
-
-  .md\:flex {
-    display: flex !important;
   }
 
   .md\:hidden {
@@ -2427,26 +2118,6 @@ nav ul li a.active {
 
   .md\:w-64 {
     width: 16rem !important;
-  }
-
-  .md\:w-1\/2 {
-    width: 50% !important;
-  }
-
-  .md\:w-full {
-    width: 100% !important;
-  }
-
-  .md\:max-w-lg {
-    max-width: 32rem !important;
-  }
-
-  .md\:flex-wrap {
-    flex-wrap: wrap !important;
-  }
-
-  .md\:justify-between {
-    justify-content: space-between !important;
   }
 
   .md\:border-r {
@@ -2716,229 +2387,6 @@ nav ul li a.active {
 }
 
 @media (min-width: 1280px) {
-  .xl\:prose-xl {
-    font-size: 1.25rem;
-    line-height: 1.8;
-  }
-
-  .xl\:prose-xl p {
-    margin-top: 1.2em;
-    margin-bottom: 1.2em;
-  }
-
-  .xl\:prose-xl [class~="lead"] {
-    font-size: 1.2em;
-    line-height: 1.5;
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-
-  .xl\:prose-xl blockquote {
-    margin-top: 1.6em;
-    margin-bottom: 1.6em;
-    padding-left: 1.0666667em;
-  }
-
-  .xl\:prose-xl h1 {
-    font-size: 2.8em;
-    margin-top: 0;
-    margin-bottom: 0.8571429em;
-    line-height: 1;
-  }
-
-  .xl\:prose-xl h2 {
-    font-size: 1.8em;
-    margin-top: 1.5555556em;
-    margin-bottom: 0.8888889em;
-    line-height: 1.1111111;
-  }
-
-  .xl\:prose-xl h3 {
-    font-size: 1.5em;
-    margin-top: 1.6em;
-    margin-bottom: 0.6666667em;
-    line-height: 1.3333333;
-  }
-
-  .xl\:prose-xl h4 {
-    margin-top: 1.8em;
-    margin-bottom: 0.6em;
-    line-height: 1.6;
-  }
-
-  .xl\:prose-xl img {
-    margin-top: 2em;
-    margin-bottom: 2em;
-  }
-
-  .xl\:prose-xl video {
-    margin-top: 2em;
-    margin-bottom: 2em;
-  }
-
-  .xl\:prose-xl figure {
-    margin-top: 2em;
-    margin-bottom: 2em;
-  }
-
-  .xl\:prose-xl figure > * {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  .xl\:prose-xl figure figcaption {
-    font-size: 0.9em;
-    line-height: 1.5555556;
-    margin-top: 1em;
-  }
-
-  .xl\:prose-xl code {
-    font-size: 0.9em;
-  }
-
-  .xl\:prose-xl h2 code {
-    font-size: 0.8611111em;
-  }
-
-  .xl\:prose-xl h3 code {
-    font-size: 0.9em;
-  }
-
-  .xl\:prose-xl pre {
-    font-size: 0.9em;
-    line-height: 1.7777778;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    border-radius: 0.5rem;
-    padding-top: 1.1111111em;
-    padding-right: 1.3333333em;
-    padding-bottom: 1.1111111em;
-    padding-left: 1.3333333em;
-  }
-
-  .xl\:prose-xl ol {
-    margin-top: 1.2em;
-    margin-bottom: 1.2em;
-  }
-
-  .xl\:prose-xl ul {
-    margin-top: 1.2em;
-    margin-bottom: 1.2em;
-  }
-
-  .xl\:prose-xl li {
-    margin-top: 0.6em;
-    margin-bottom: 0.6em;
-  }
-
-  .xl\:prose-xl ol > li {
-    padding-left: 1.8em;
-  }
-
-  .xl\:prose-xl ol > li::before {
-    left: 0;
-  }
-
-  .xl\:prose-xl ul > li {
-    padding-left: 1.8em;
-  }
-
-  .xl\:prose-xl ul > li::before {
-    width: 0.35em;
-    height: 0.35em;
-    top: calc(0.9em - 0.175em);
-    left: 0.25em;
-  }
-
-  .xl\:prose-xl > ul > li p {
-    margin-top: 0.8em;
-    margin-bottom: 0.8em;
-  }
-
-  .xl\:prose-xl > ul > li > *:first-child {
-    margin-top: 1.2em;
-  }
-
-  .xl\:prose-xl > ul > li > *:last-child {
-    margin-bottom: 1.2em;
-  }
-
-  .xl\:prose-xl > ol > li > *:first-child {
-    margin-top: 1.2em;
-  }
-
-  .xl\:prose-xl > ol > li > *:last-child {
-    margin-bottom: 1.2em;
-  }
-
-  .xl\:prose-xl ul ul, .xl\:prose-xl ul ol, .xl\:prose-xl ol ul, .xl\:prose-xl ol ol {
-    margin-top: 0.8em;
-    margin-bottom: 0.8em;
-  }
-
-  .xl\:prose-xl hr {
-    margin-top: 2.8em;
-    margin-bottom: 2.8em;
-  }
-
-  .xl\:prose-xl hr + * {
-    margin-top: 0;
-  }
-
-  .xl\:prose-xl h2 + * {
-    margin-top: 0;
-  }
-
-  .xl\:prose-xl h3 + * {
-    margin-top: 0;
-  }
-
-  .xl\:prose-xl h4 + * {
-    margin-top: 0;
-  }
-
-  .xl\:prose-xl table {
-    font-size: 0.9em;
-    line-height: 1.5555556;
-  }
-
-  .xl\:prose-xl thead th {
-    padding-right: 0.6666667em;
-    padding-bottom: 0.8888889em;
-    padding-left: 0.6666667em;
-  }
-
-  .xl\:prose-xl thead th:first-child {
-    padding-left: 0;
-  }
-
-  .xl\:prose-xl thead th:last-child {
-    padding-right: 0;
-  }
-
-  .xl\:prose-xl tbody td {
-    padding-top: 0.8888889em;
-    padding-right: 0.6666667em;
-    padding-bottom: 0.8888889em;
-    padding-left: 0.6666667em;
-  }
-
-  .xl\:prose-xl tbody td:first-child {
-    padding-left: 0;
-  }
-
-  .xl\:prose-xl tbody td:last-child {
-    padding-right: 0;
-  }
-
-  .xl\:prose-xl > :first-child {
-    margin-top: 0;
-  }
-
-  .xl\:prose-xl > :last-child {
-    margin-bottom: 0;
-  }
-
   .xl\:px-12 {
     padding-left: 3rem !important;
     padding-right: 3rem !important;

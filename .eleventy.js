@@ -197,7 +197,7 @@ module.exports = function(eleventyConfig) {
   let markdownItCenterText = require("markdown-it-center-text")
   let options = {
     html: true,
-    breaks: true,
+    breaks: false, // duh
     linkify: true,
     typographer: true
   };
