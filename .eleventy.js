@@ -8,21 +8,24 @@ const embedEverything = require("eleventy-plugin-embed-everything");
 const pluginTOC = require('eleventy-plugin-nesting-toc');
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const Image = require("@11ty/eleventy-img");
-module.exports = function(eleventyConfig) {
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+
+module.exports = function (eleventyConfig) {
+  eleventyConfig.addPlugin(syntaxHighlight);
   // eleventyConfig.addPlugin(pluginTOC);
-  eleventyConfig.addPlugin(svgContents); 
+  eleventyConfig.addPlugin(svgContents);
   eleventyConfig.addPlugin(embedEverything);
   eleventyConfig.addShortcode("version", function () {
     return String(Date.now());
   });
 
   // Responsive image shortcode
-  eleventyConfig.addLiquidShortcode("image", async function(src, alt, sizes = "100vw") {
-    if(alt === undefined) {
+  eleventyConfig.addLiquidShortcode("image", async function (src, alt, sizes = "100vw") {
+    if (alt === undefined) {
       // You bet we throw an error on missing alt (alt="" works okay)
       throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
     }
-    src = './content/images/'+src
+    src = './content/images/' + src
     let metadata = await Image(src, {
       widths: [400, 600, 800, 1000, 1200, 1400, 1600, 1900],
       formats: ['webp', 'jpeg', 'png'],
@@ -34,8 +37,8 @@ module.exports = function(eleventyConfig) {
 
     let picture = `<picture>
       ${Object.values(metadata).map(imageFormat => {
-        return `  <source type="image/${imageFormat[0].format}" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}" sizes="${sizes}">`;
-      }).join("\n")}
+      return `  <source type="image/${imageFormat[0].format}" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}" sizes="${sizes}">`;
+    }).join("\n")}
         <img
           data-src="${lowsrc.url}"
           width="${lowsrc.width}"
@@ -43,12 +46,12 @@ module.exports = function(eleventyConfig) {
           alt="${alt}">
       </picture>`;
 
-      return `${picture}`;
+    return `${picture}`;
 
   });
 
-  eleventyConfig.addLiquidShortcode("icon", function(title,url) {
-    return '<img class="icon" src="'+url+'" alt="'+title+'" />';
+  eleventyConfig.addLiquidShortcode("icon", function (title, url) {
+    return '<img class="icon" src="' + url + '" alt="' + title + '" />';
   });
 
   // Button shortcode -- experimental
@@ -97,39 +100,39 @@ module.exports = function(eleventyConfig) {
   //   }, {});
   // });
 
-   // Creates custom collection "pages"
-   eleventyConfig.addCollection("pages", function(collection) {
+  // Creates custom collection "pages"
+  eleventyConfig.addCollection("pages", function (collection) {
     return collection.getFilteredByGlob("pages/*.md");
-   });
+  });
 
-   // Creates custom collection "posts"
+  // Creates custom collection "posts"
   //  eleventyConfig.addCollection("posts", function(collection) {
   //   const coll = collection.getFilteredByGlob("posts/*.md");
-  
+
   //   for(let i = 0; i < coll.length ; i++) {
   //     const prevPost = coll[i-1];
   //     const nextPost = coll[i + 1];
-  
+
   //     coll[i].data["prevPost"] = prevPost;
   //     coll[i].data["nextPost"] = nextPost;
   //   }
-  
+
   //   return coll;
   // });
-    
 
-   // Creates custom collection "results" for search
-   const searchFilter = require("./filters/searchFilter");
-   eleventyConfig.addFilter("search", searchFilter);
-   eleventyConfig.addCollection("results", collection => {
+
+  // Creates custom collection "results" for search
+  const searchFilter = require("./filters/searchFilter");
+  eleventyConfig.addFilter("search", searchFilter);
+  eleventyConfig.addCollection("results", collection => {
     return [...collection.getFilteredByGlob("**/*.md")];
-   });
-  
-   // Creates custom collection "menuItems"
-   eleventyConfig.addCollection("menuItems", collection =>
+  });
+
+  // Creates custom collection "menuItems"
+  eleventyConfig.addCollection("menuItems", collection =>
     collection
       .getAll()
-      .filter(function(item) {
+      .filter(function (item) {
         return "eleventyNavigation" in item.data;
       })
       .sort((a, b) => {
@@ -149,12 +152,12 @@ module.exports = function(eleventyConfig) {
   });
 
   // Minify CSS
-  eleventyConfig.addFilter("cssmin", function(code) {
+  eleventyConfig.addFilter("cssmin", function (code) {
     return new CleanCSS({}).minify(code).styles;
   });
 
   // Minify JS
-  eleventyConfig.addFilter("jsmin", function(code) {
+  eleventyConfig.addFilter("jsmin", function (code) {
     let minified = UglifyJS.minify(code);
     if (minified.error) {
       console.log("UglifyJS error: ", minified.error);
@@ -164,7 +167,7 @@ module.exports = function(eleventyConfig) {
   });
 
   // Minify HTML output
-  eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
+  eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
     if (outputPath.indexOf(".html") > -1) {
       let minified = htmlmin.minify(content, {
         useShortDoctype: true,
@@ -211,8 +214,8 @@ module.exports = function(eleventyConfig) {
     .use(mdIterator, 'url_new_win', 'link_open', function (tokens, idx) {
       const [attrName, href] = tokens[idx].attrs.find(attr => attr[0] === 'href')
       if (href && (!href.includes('franknoirot.co') && !href.startsWith('/') && !href.startsWith('#'))) {
-        tokens[idx].attrPush([ 'target', '_blank' ])
-        tokens[idx].attrPush([ 'rel', 'noopener noreferrer' ])
+        tokens[idx].attrPush(['target', '_blank'])
+        tokens[idx].attrPush(['rel', 'noopener noreferrer'])
       }
     })
     .use(markdownItAnchor, opts)
@@ -229,7 +232,7 @@ module.exports = function(eleventyConfig) {
       imgClass: "p-4",
     })
     .use(markdownItAttrs, {
-      includeLevel: [2,3],
+      includeLevel: [2, 3],
       listType: "ol"
     })
   );

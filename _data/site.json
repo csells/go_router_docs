@@ -9,12 +9,12 @@
   "navigationStyle": "vertical",
   "emoji": "💥",
   "enableSearch": true,
-  "enableDarkMode": true,
+  "enableDarkMode": false,
   "enableDatestamp": true,
   "enableGithubLink": true,
   "enableContact": false,
   "enableNetlifyCMS": false,
   "enableComments": false,
   "enableEncryption": false,
-  "enablePageNavigation": true
+  "enablePageNavigation": false
 }

@@ -125,6 +125,16 @@
     width: "24px";
   }
   input {
-   @apply dark:text-gray-400
+   dark:text-gray-400
   }
+
+  /* turn off the backticks {} */
+  code::after {
+    content: "" !important;
+  }
+
+  code::before {
+    content: "" !important;
+  }
+
 }
