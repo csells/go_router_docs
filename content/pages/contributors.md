@@ -4,6 +4,7 @@ date: Last Modified
 eleventyNavigation:
   key: Contributors
   order: 1
+  parent: Welcome
 ---
 It's amazing to me how many folks have already contributed to this project. Huge
 shout out to the go_router contributors!

@@ -16,5 +16,5 @@
   "enableNetlifyCMS": false,
   "enableComments": false,
   "enableEncryption": false,
-  "enablePageNavigation": false
+  "enablePageNavigation": true
 }

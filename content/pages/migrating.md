@@ -1,9 +1,11 @@
 ---
 title: Migrating Between Versions
 date: Last Modified 
+permalink: /migrating/index.html
 eleventyNavigation:
   key: Migrating Between Versions
-  order: 3
+  order: 4
+  parent: Getting Started
 ---
 ## Migrating 1.x &rarr; 2.x
 By [popular demand](https://twitter.com/csells/status/1445520767190388738),
