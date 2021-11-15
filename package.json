@@ -1,5 +1,5 @@
 {
-  "name": "spacebook",
+  "name": "go_router_docs",
   "version": "1.0.0",
   "description": "A simple site generator based on Eleventy, Tailwind 2.0, and Alpine.js",
   "scripts": {
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/broeker/spacebook.git"
+    "url": "git+https://github.com/csells/go_router_docs.git"
   },
   "author": "Tim Broeker <broeker@gmail.com> (https://www.electriccitizen.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/broeker/spacebook/issues"
+    "url": "https://github.com/csells/go_router_docs/issues"
   },
-  "homepage": "https://github.com/broeker/spacebook",
+  "homepage": "https://gorouter.dev",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.3",
