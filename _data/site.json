@@ -1,0 +1,20 @@
+{
+  "name": "go_router",
+  "subtitle": "A declarative router for Flutter based on the Router API (aka Navigation 2) supports dynamic & deep linking, named routes, custom transitions and more.",
+  "description": "Flutter go_router package documentation",
+  "footer": "Made with ❤ in Portland, OR",
+  "url": "https://gorouter.dev",
+  "githubUrl": "https://github.com/csells/go_router",
+  "githubBranch": "main",
+  "navigationStyle": "vertical",
+  "emoji": "💥",
+  "enableSearch": true,
+  "enableDarkMode": true,
+  "enableDatestamp": true,
+  "enableGithubLink": true,
+  "enableContact": false,
+  "enableNetlifyCMS": false,
+  "enableComments": false,
+  "enableEncryption": false,
+  "enablePageNavigation": true
+}
