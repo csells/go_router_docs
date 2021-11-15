@@ -17,7 +17,7 @@
               <div class="block md:hidden pt-4 font-semibold text-gray-500">{{ site.name }}</div>
               <div class="block md:hidden text-sm text-gray-500 mb-4">{{ site.subtitle }}</div>
             </a>
-            {{ collections.all | eleventyNavigation | eleventyNavigationToHtml({anchorClass: "item",activeAnchorClass: "active",activeListItemClass: "active",activeKey: eleventyNavigation.key, listClass: "nav", listItemClass: "item"}) | safe }}
+            {{ site.navPages | eleventyNavigationToHtml({anchorClass: "item",activeAnchorClass: "active",activeListItemClass: "active",activeKey: eleventyNavigation.key, listClass: "nav", listItemClass: "item"}) | safe }}
           </div>
         </nav>
       {% endif %}

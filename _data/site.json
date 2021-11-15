@@ -16,5 +16,235 @@
   "enableNetlifyCMS": false,
   "enableComments": false,
   "enableEncryption": false,
-  "enablePageNavigation": true
+  "enablePageNavigation": true,
+  "navPages": [
+    {
+      "key": "Welcome",
+      "order": 0,
+      "url": "/",
+      "pluginType": "eleventy-navigation",
+      "title": "Welcome",
+      "children": [
+        {
+          "key": "Contributors",
+          "order": 1,
+          "parent": "Welcome",
+          "url": "/content/pages/contributors/",
+          "pluginType": "eleventy-navigation",
+          "parentKey": "Welcome",
+          "title": "Contributors",
+          "children": []
+        },
+        {
+          "key": "Changelog",
+          "order": 2,
+          "parent": "Welcome",
+          "url": "/changelog/",
+          "pluginType": "eleventy-navigation",
+          "parentKey": "Welcome",
+          "title": "Changelog",
+          "children": []
+        }
+      ]
+    },
+    {
+      "key": "Getting Started",
+      "order": 3,
+      "url": "/getting-started/",
+      "pluginType": "eleventy-navigation",
+      "title": "Getting Started",
+      "children": [
+        {
+          "key": "Migrating Between Versions",
+          "order": 4,
+          "parent": "Getting Started",
+          "url": "/migrating/",
+          "pluginType": "eleventy-navigation",
+          "parentKey": "Getting Started",
+          "title": "Migrating Between Versions",
+          "children": []
+        }
+      ]
+    },
+    {
+      "key": "Declarative Routing",
+      "order": 5,
+      "url": "/declarative-routing/",
+      "pluginType": "eleventy-navigation",
+      "title": "Declarative Routing",
+      "children": [
+        {
+          "key": "Router State",
+          "order": 6,
+          "parent": "Declarative Routing",
+          "url": "/router-state/",
+          "pluginType": "eleventy-navigation",
+          "parentKey": "Declarative Routing",
+          "title": "Router State",
+          "children": []
+        },
+        {
+          "key": "Error Handling",
+          "order": 7,
+          "parent": "Declarative Routing",
+          "url": "/error-handling/",
+          "pluginType": "eleventy-navigation",
+          "parentKey": "Declarative Routing",
+          "title": "Error Handling",
+          "children": []
+        },
+        {
+          "key": "Initialization",
+          "order": 8,
+          "parent": "Declarative Routing",
+          "url": "/initialization/",
+          "pluginType": "eleventy-navigation",
+          "parentKey": "Declarative Routing",
+          "title": "Initialization",
+          "children": []
+        }
+      ]
+    },
+    {
+      "key": "Navigation",
+      "order": 9,
+      "url": "/navigation/",
+      "pluginType": "eleventy-navigation",
+      "title": "Navigation",
+      "children": [
+        {
+          "key": "Initial Location",
+          "order": 10,
+          "parent": "Navigation",
+          "url": "/initial-location/",
+          "pluginType": "eleventy-navigation",
+          "parentKey": "Navigation",
+          "title": "Initial Location",
+          "children": []
+        },
+        {
+          "key": "Current Location",
+          "order": 11,
+          "parent": "Navigation",
+          "url": "/current-location/",
+          "pluginType": "eleventy-navigation",
+          "parentKey": "Navigation",
+          "title": "Current Location",
+          "children": []
+        },
+        {
+          "key": "Push",
+          "order": 12,
+          "parent": "Navigation",
+          "url": "/push/",
+          "pluginType": "eleventy-navigation",
+          "parentKey": "Navigation",
+          "title": "Push",
+          "children": []
+        },
+        {
+          "key": "Pop",
+          "order": 13,
+          "parent": "Navigation",
+          "url": "/pop/",
+          "pluginType": "eleventy-navigation",
+          "parentKey": "Navigation",
+          "title": "Pop",
+          "children": []
+        }
+      ]
+    },
+    {
+      "key": "Parameters",
+      "order": 14,
+      "url": "/parameters/",
+      "pluginType": "eleventy-navigation",
+      "title": "Parameters",
+      "children": [
+        {
+          "key": "Dynamic Linking",
+          "order": 15,
+          "parent": "Parameters",
+          "url": "/dynamic-linking/",
+          "pluginType": "eleventy-navigation",
+          "parentKey": "Parameters",
+          "title": "Dynamic Linking",
+          "children": []
+        }
+      ]
+    },
+    {
+      "key": "Sub-routes",
+      "order": 16,
+      "url": "/sub-routes/",
+      "pluginType": "eleventy-navigation",
+      "title": "Sub-routes",
+      "children": []
+    },
+    {
+      "key": "Redirection",
+      "order": 17,
+      "url": "/redirection/",
+      "pluginType": "eleventy-navigation",
+      "title": "Redirection",
+      "children": [
+        {
+          "key": "Top-level Redirection",
+          "order": 18,
+          "parent": "Redirection",
+          "url": "/top-level-redirection/",
+          "pluginType": "eleventy-navigation",
+          "parentKey": "Redirection",
+          "title": "Top-level Redirection",
+          "children": []
+        },
+        {
+          "key": "Route-level Redirection",
+          "order": 19,
+          "parent": "Redirection",
+          "url": "/route-level-redirection/",
+          "pluginType": "eleventy-navigation",
+          "parentKey": "Redirection",
+          "title": "Route-level Redirection",
+          "children": []
+        },
+        {
+          "key": "Parameterized Redirection",
+          "order": 20,
+          "parent": "Redirection",
+          "url": "/param-redirection/",
+          "pluginType": "eleventy-navigation",
+          "parentKey": "Redirection",
+          "title": "Parameterized Redirection",
+          "children": []
+        },
+        {
+          "key": "Multiple Redirections",
+          "order": 21,
+          "parent": "Redirection",
+          "url": "/multi-redirection/",
+          "pluginType": "eleventy-navigation",
+          "parentKey": "Redirection",
+          "title": "Multiple Redirections",
+          "children": []
+        }
+      ]
+    },
+    {
+      "key": "Query Parameters",
+      "order": 22,
+      "url": "/query-params/",
+      "pluginType": "eleventy-navigation",
+      "title": "Query Parameters",
+      "children": []
+    },
+    {
+      "key": "Extra Parameter",
+      "order": 23,
+      "url": "/extra-param/",
+      "pluginType": "eleventy-navigation",
+      "title": "Extra Parameter",
+      "children": []
+    }
+  ]
 }
